@@ -1,0 +1,333 @@
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*=============================================================================================================*/
+                              /*INTRO ANIMATION*/                           
+/*==============================================================================================================*/
+
+.welcome-container {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.welcome-container.hidden{
+  display: none;
+}
+
+.welcome-layout{
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  top:  50%;
+  transform: translate(-50%, -50%);
+}
+
+.welcome-layout > ul{
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+.welcome-text{
+  list-style: none;
+  position: relative; 
+}
+.welcome-text-sub{
+  list-style: none;
+  position: absolute;
+  text-align: center;
+  width:100%;
+  bottom:-105%;
+}
+.welcome-text li {
+  margin-right: 5px;
+  display: inline-block;
+  color: #0099ff;
+  font-family: 'Baloo Bhaina', sans-serif;
+  font-size: 4em;
+  font-weight: normal;
+  opacity: 1;
+  transition: all 3s ease;
+  line-height: 56px;
+}
+.welcome-text-sub li{
+  display: inline-block;
+  color: #000;
+  font-family: 'Baloo Bhaina', sans-serif;
+  font-size: 1.5em;
+  font-weight: normal;
+  opacity: 1;
+}
+
+.welcome-text-sub li:nth-child(1){
+  transition: all 2s ease;
+}
+
+.welcome-text-sub li:nth-child(2){
+  transition: all 2s ease;  
+}
+
+.welcome-text li:last-child{
+  margin-right: 0;
+}
+
+.welcome-text-sub li:last-child{
+  margin-right: 0;
+}
+
+.welcome-text.hidden li{
+  opacity: 0;
+}
+
+.welcome-text-sub.hidden li{
+  opacity: 0;
+}
+
+.welcome-text.hidden li:nth-child(1){
+  transform: translateX(-200px) translateY(-200px);
+}
+.welcome-text.hidden li:nth-child(2){
+  transform: translateX(20px) translateY(100px);
+}
+.welcome-text.hidden li:nth-child(3){
+  transform: translateX(-150px) translateY(-60px);
+}
+.welcome-text.hidden li:nth-child(4){
+  transform: translateX(10px) translateY(-200px);
+}
+.welcome-text.hidden li:nth-child(5){
+  transform: translateX(-300px) translateY(200px);
+}
+.welcome-text.hidden li:nth-child(6){
+  transform: translateX(-30px) translateY(200px);
+}
+
+#line {
+  width: 350px;
+  overflow: visible;
+  z-index: 100;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+#line path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+anav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+header nav i.material-icons{
+  font-size: 36px;
+}
+
+/*=============================================================================================================*/
+                              /*MAIN PAGE*/                           
+/*==============================================================================================================*/
+
+#logo{
+  width: 140px;
+  height: auto;
+  margin-top: 14px;
+  margin-left: 10px;
+  display: none;
+}
+#copyright-text{
+  background-color: transparent;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  color: #000;
+  font-size: 0.915em;
+  z-index: 80;
+}
+body footer.page-footer{
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+.button-collapse >i{
+  color: #000;
+}
+
+#index-banner {
+  position: relative;
+  height: 100vh;
+  transition: all 1s ease;
+  z-index: -1;
+}
+
+/*=============================================================================================================*/
+                              /*CONTENT*/                           
+/*==============================================================================================================*/
+
+.fadein{
+  height: 105%;
+  position:relative;
+  filter: grayscale(100%);
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.fadein.active{
+  height: 100%;
+  position:relative;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  filter: grayscale(0%);
+  transition-duration: 2s;
+}
+
+#main{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#main{
+  background-image: url('/images/main.jpg');
+}
+
+
+#aboutus{
+  background-image: url('/images/factory.jpg');
+}
+
+
+
+#services{
+  background-image: url('/images/drawings.jpg');
+}
+
+#projects{
+  background-image: url('/images/boiler.jpg');
+}
+
+#contactus{
+  background-image: url('/images/last.jpg');
+}
+
+/*=============================================================================================================*/
+                              /*CONTENT - TEXT*/                           
+/*==============================================================================================================*/
+
+.text{
+  font-family: "Helvetica", Times, serif;
+  font-size: 1.30em;
+  z-index: 100;
+  color: #fff;
+  display: block;
+  height: 450px;
+  width: 450px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  text-align: justify;
+  padding: 70px;
+}
+
+#main-text{
+  position: absolute;
+  top: 30vh;
+  left: 45vh;
+  background-color: black;
+}
+
+#aboutus-text{
+  position: absolute;
+  top: 125vh;
+  left: 25vh;
+  background-color: #0099ff;
+}
+
+#services-text{
+  position: absolute;
+  top: 228vh;
+  left: 75vh;
+  background-color: black;
+}
+
+#projects-text{
+  position: absolute;
+  top: 336vh;
+  left: 25vh;
+  background-color: #0099ff;
+}
+
+#contactus-text{
+  position: absolute;
+  top: 440vh;
+  left: 5vh;
+  background-color: #994d00; 
+}
+
+
+
+
+
+
+
+
+
+
+
