@@ -334,7 +334,7 @@ body .navbar-fixed {
 /*==============================================================================================================*/
 
 #form{
-margin-top: 10%;
+margin-top: 5%;
 background-color: #fff; 
 }
 
@@ -350,7 +350,11 @@ margin: 50px;
   text-align: center;
   background-color: #000;
   color: #fff;
-  margin-top: 50px;
+  margin-top: 30px;
+}
+
+#form-layout{
+  height: 100vh;
 }
 
 /*=============================================================================================================*/
