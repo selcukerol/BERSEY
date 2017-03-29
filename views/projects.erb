@@ -1,0 +1,66 @@
+<head>
+  <title>Projects</title>
+</head>
+<div id="map"></div>
+<div id="info1">
+  <table style="width:100%">
+    <tr>
+    <th>Company</th>
+    <th>Project Name</th>
+    <th>Project Value(USD)</th> 
+    <th>Completion Date</th>
+  </tr>
+  <tr>
+    <td>Jason</td>
+    <td>Thermal Boiler Installation</td> 
+    <td>2.000.000</td>
+    <td>25/09/2012</td>
+  </tr>
+  </table>
+</div>
+<div id="marker2"></div>
+<div id="marker3"></div>
+<div id="marker4"></div>
+<script>   
+  var map, marker0, marker1, marker2, marker3;
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 42.0082, lng: 80.9784}, 
+      zoom: 4
+    });
+    marker0 = new google.maps.Marker({
+      position: {lat: 47.4116, lng: 28.3699},
+      map: map
+    });
+    marker1 = new google.maps.Marker({
+      position: {lat: 43.1198, lng: 131.8869},
+      map: map
+    });
+    marker2 = new google.maps.Marker({
+      position: {lat: 45.9432, lng: 24.9668},
+      map: map
+    });
+    marker3 = new google.maps.Marker({
+      position: {lat: 41.4104, lng: 33.6998},
+      map: map
+    });
+    marker4 = new google.maps.Marker({
+      position: {lat: 32.4279, lng: 53.6880},
+      map: map
+    });
+
+    function createInfoWindow(input){
+    var infowindow = new google.maps.InfoWindow({
+      content: document.getElementById('info1')
+    });
+    return infowindow;
+  }
+  createInfoWindow().open(map,marker1); 
+  };
+
+  
+</script> 
+
+
+
+
