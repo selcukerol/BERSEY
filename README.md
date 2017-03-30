@@ -1,6 +1,6 @@
 # BERSEY
 
-# A company website with Google Maps linked to Projects, Contact Form linked to Send Grid and basic navigation bar.
+# A business website with Google Maps,Send Grid and Scroll Magic attributes.
 
 ## Getting Started
 
@@ -12,10 +12,10 @@ HTML5, CSS3, Javascript: (Jquery, Scroll Magic, Greensock),  Google API, Send GR
 
 ## Authors
 
-* **SELCUK EROL** - *Initial work* - [PurpleBooth](https://github.com/selcukerol)
+* **SELCUK EROL** - (https://github.com/selcukerol)
 
 ## Acknowledgments
 
-* NYCDA crew
-* Cam Drews
-* and I hate tomatoes tutorials
+* NYCDA crew and students
+* Cam Drews (NYCDA Instructor)
+* and Petr Tichy (I hate tomatoes tutorials)
