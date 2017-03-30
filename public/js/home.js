@@ -67,11 +67,11 @@ var ourScene1 = new ScrollMagic.Scene({
 
 })
 .setPin('#main', {pushFollowers: false})
-.addIndicators({
-	name: 'overlap',
-	colorTrigger: 'black',
-	colorStart: 'red'
-})
+// .addIndicators({
+// 	name: 'overlap',
+// 	colorTrigger: 'black',
+// 	colorStart: 'red'
+// })
 .addTo(controller);
 
 // //////========SCENE2=====////////////
@@ -83,11 +83,11 @@ var ourScene2 = new ScrollMagic.Scene({
 })
 .setPin('#aboutus', {pushFollowers: false})
 .setClassToggle("#aboutus", "active")
-.addIndicators({
-	name: 'overlap',
-	colorTrigger: 'black',
-	colorStart: 'red'
-})
+// .addIndicators({
+// 	name: 'overlap',
+// 	colorTrigger: 'black',
+// 	colorStart: 'red'
+// })
 .addTo(controller);
 
 
@@ -101,11 +101,11 @@ var ourScene3 = new ScrollMagic.Scene({
 })
 .setPin('#services', {pushFollowers: false})
 .setClassToggle("#services", "active")
-.addIndicators({
-	name: 'overlap',
-	colorTrigger: 'black',
-	colorStart: 'red'
-})
+// .addIndicators({
+// 	name: 'overlap',
+// 	colorTrigger: 'black',
+// 	colorStart: 'red'
+// })
 .addTo(controller);
 
 // ////========SCENE4=====////////////
@@ -118,11 +118,11 @@ var ourScene4 = new ScrollMagic.Scene({
 })
 .setPin('#projects', {pushFollowers: false})
 .setClassToggle("#projects", "active")
-.addIndicators({
-	name: 'overlap',
-	colorTrigger: 'black',
-	colorStart: 'red'
-})
+// .addIndicators({
+// 	name: 'overlap',
+// 	colorTrigger: 'black',
+// 	colorStart: 'red'
+// })
 .addTo(controller);
 
 // ////========SCENE5=====////////////
@@ -135,11 +135,11 @@ var ourScene5 = new ScrollMagic.Scene({
 })
 .setPin('#contactus', {pushFollowers: false})
 .setClassToggle("#contactus", "active")
-.addIndicators({
-	name: 'overlap',
-	colorTrigger: 'black',
-	colorStart: 'red'
-})
+// .addIndicators({
+// 	name: 'overlap',
+// 	colorTrigger: 'black',
+// 	colorStart: 'red'
+// })
 .addTo(controller);
 
 // ////////////////========TEXT ANIMATIONS=====/////////////////
@@ -155,11 +155,11 @@ $('.text').each(function(){
 		triggerHook: 0.3,
 		reverse: false
 	})
-	.addIndicators({
-	name: 'text',
-	colorTrigger: 'green',
-	colorStart: 'blue'
-})
+// 	.addIndicators({
+// 	name: 'text',
+// 	colorTrigger: 'green',
+// 	colorStart: 'blue'
+// })
 	.setTween(tween)
 	.addTo(controller);
 });
