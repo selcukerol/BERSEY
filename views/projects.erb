@@ -105,6 +105,7 @@
 <div id="info6">
   <p><strong>BERSEY LTD STI.</strong></p>
 </div>
+
 <script>   
   markers = [];
   var lastInfo;
@@ -137,7 +138,8 @@
   });  
   };  
 </script> 
-
+<script src="https://maps.googleapis.com/maps/api/js?key=<%=ENV['GOOGLE_API_KEY']%>&callback=initMap" async defer> 
+    </script>
 
 
 

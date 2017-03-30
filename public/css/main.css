@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 * {
   margin: 0;
@@ -46,7 +47,7 @@
   position: absolute;
   text-align: center;
   width:100%;
-  bottom:-105%;
+  bottom:-82%;
 }
 .welcome-text li {
   margin-right: 5px;
@@ -112,7 +113,7 @@
 }
 
 #line {
-  width: 350px;
+  width: 300px;
   overflow: visible;
   z-index: 100;
   position: absolute;
@@ -179,15 +180,7 @@ footer.page-footer {
   margin-top: 9px;
   margin-left: 9px;
 }
-#copyright-text{
-  background-color: transparent;
-  position: fixed;
-  bottom: 16px;
-  right: 16px;
-  color: #000;
-  font-size: 0.915em;
-  z-index: 80;
-}
+
 body footer.page-footer{
   padding-top: 5px;
   padding-bottom: 5px;
@@ -205,7 +198,44 @@ body footer.page-footer{
 }
 
 /*=============================================================================================================*/
-                              /*CONTENT*/                           
+                              /*FOOTER*/                           
+/*==============================================================================================================*/
+#copyright-text{
+  background-color: transparent;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  color: #fff;
+  letter-spacing: 1.5px;
+  font-size: 0.915em;
+  z-index: 80;
+}
+
+.linkedin{
+  position: absolute;
+  top: 618vh;
+  left: 6px;
+  z-index: 80;
+}
+
+.linkedin img{
+  height: 36px;
+  width: 36px;
+}
+
+.footer-link{
+  position: absolute;
+  top: 620vh;
+  left: 598px;
+  z-index: 80;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+
+
+/*=============================================================================================================*/
+                              /*CONTENT IMAGES*/                           
 /*==============================================================================================================*/
 
 .fadein{
@@ -232,6 +262,7 @@ body footer.page-footer{
   background-size: 100% auto;
   background-position: center;
   filter: grayscale(0%);
+  filter: brightness(60%);
   transition-duration: 2s;
 }
 
@@ -243,78 +274,148 @@ body footer.page-footer{
 
 #main{
   background-image: url('/images/main.jpg');
+  filter: brightness(50%);
 }
 
 
 #aboutus{
-  background-image: url('/images/factory.jpg');
+  background-image: url('/images/last.jpg');
 }
 
 
 
 #services{
   background-image: url('/images/drawings.jpg');
+  opacity: 0.7;
 }
 
 #projects{
-  background-image: url('/images/boiler.jpg');
+  background-image: url('/images/Boiler.jpg');
 }
 
 #contactus{
-  background-image: url('/images/last.jpg');
+  background-image: url('/images/factory.jpg');
+}
+
+#lastsection{
+  background-image: url('/images/main.png');
+  background-color: #fff;
+  height: 95%;
 }
 
 /*=============================================================================================================*/
-                              /*CONTENT - TEXT*/                           
+                              /*INTRO - CONTENT - TEXT*/                           
 /*==============================================================================================================*/
 
 .text{
-  font-family: "Helvetica", Times, serif;
-  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
   z-index: 100;
-  color: #fff;
   display: block;
-  height: 350px;
-  width: 350px;
-  border-radius: 50%;
   box-sizing: border-box;
-  text-align: justify;
-  padding: 50px;
+  padding: 60px;
+  font-weight: 500;
+  letter-spacing: 5px;
+
 }
 
 #main-text{
+  color: #fff;
   position: absolute;
-  top: 30vh;
-  left: 45vh;
-  background-color: black;
+  top: 27vh;
+  left: 5vh;
+  right: 5vh;
+  background-color: transparent;
+}
+
+#main-text2{
+  color: #fff;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 34vh;
+  left: 5vh;
+  right: 5vh;
+  background-color: transparent;
 }
 
 #aboutus-text{
+  color: #fff;
   position: absolute;
-  top: 125vh;
-  left: 25vh;
-  background-color: #0099ff;
+  top: 136vh;
+  left: 5vh;
+  background-color: transparent;
+}
+
+#aboutus-text2{
+  color: #fff;
+  position: absolute;
+  top: 143vh;
+  left: 5vh;
+  background-color: transparent;
 }
 
 #services-text{
+  color: #fff;
   position: absolute;
-  top: 228vh;
-  left: 75vh;
-  background-color: black;
+  top: 241vh;
+  left: 5vh;
+  background-color: transparent;
 }
 
 #projects-text{
+  color: #fff;
   position: absolute;
-  top: 336vh;
-  left: 25vh;
-  background-color: #0099ff;
+  top: 346vh;
+  left: 5vh;
+  background-color: transparent;
 }
 
 #contactus-text{
+  color: #fff;
   position: absolute;
-  top: 440vh;
+  top: 450vh;
   left: 5vh;
-  background-color: #994d00; 
+  background-color: transparent; 
+}
+/*=============================================================================================================*/
+                              /*CONTACT - TEXT*/                           
+/*==============================================================================================================*/
+#address-text{
+  letter-spacing: 2px;
+}
+
+#last-text{
+  font-size: 1.5em;
+  letter-spacing: 2px;
+
+}
+
+#last-text2{
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  
+}
+
+#phone-text{
+  letter-spacing: 2px;
+}
+#last-text3{
+  font-size: 1.5em;
+  letter-spacing: 2px;  
+}
+
+.text-last{
+  line-height: 1.5em; 
+}
+
+#lastsection{
+  background-color: #fff;
+}
+
+#last-contact{
+  background-color: #fff;
+  margin-top: 15%;
+  padding: 2%;
 }
 
 /*=============================================================================================================*/
@@ -327,6 +428,10 @@ body #sidenav-overlay{
 
 body .navbar-fixed {
   height: 36px;
+}
+
+body .side-nav a{
+  font-weight: 600;
 }
 
 /*=============================================================================================================*/
@@ -358,7 +463,7 @@ margin: 50px;
 }
 
 /*=============================================================================================================*/
-                              /*****CONTACT FORM********/                           
+                              /*****GOOGLE MAPS********/                           
 /*==============================================================================================================*/
 
 #map{
@@ -366,6 +471,46 @@ margin: 50px;
   width: auto;
 }
 
+/*=============================================================================================================*/
+                              /*****ABOUT US********/                           
+/*==============================================================================================================*/
+
+#aboutus-panel{
+  position: absolute;
+  height: 100vh;
+  text-align: justify;
+  font-size: 1.1em;
+  z-index: 100;
+  line-height: 1.6em;
+  font-weight: 550;
+}
+
+#aboutus-panel::before{
+  content:"";
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  position: fixed;
+  z-index: -1;
+  background: url(/images/baw.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.2;
+}
+
+body .card-panel{
+  margin-top: 12%;
+  background-color: transparent;
+  
+}
+
+.footer{
+  background-color: #000;
+  height: 10%;
+
+}
 
 
 

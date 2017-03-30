@@ -1092,11 +1092,11 @@
 }
 
 .green {
-  background-color: #4CAF50 !important;
+  background-color: #0099ff !important;
 }
 
 .green-text {
-  color: #4CAF50 !important;
+  color: #0099ff !important;
 }
 
 .green.lighten-5 {
@@ -4254,7 +4254,7 @@ a {
 
 html {
   line-height: 1.5;
-  font-family: "Roboto", sans-serif;
+  font-family: "HelveticaNeue-Light";
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -4273,7 +4273,7 @@ html {
 
 @media only screen and (min-width: 1200px) {
   html {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 
@@ -5878,8 +5878,8 @@ input[type=search].valid,
 input[type=search]:focus.valid,
 textarea.materialize-textarea.valid,
 textarea.materialize-textarea:focus.valid {
-  border-bottom: 1px solid #4CAF50;
-  box-shadow: 0 1px 0 0 #4CAF50;
+  border-bottom: 1px solid #0099ff;
+  box-shadow: 0 1px 0 0 #0099ff;
 }
 
 input:not([type]).valid + label:after,
@@ -5909,7 +5909,7 @@ input[type=search]:focus.valid + label:after,
 textarea.materialize-textarea.valid + label:after,
 textarea.materialize-textarea:focus.valid + label:after {
   content: attr(data-success);
-  color: #4CAF50;
+  color: #0099ff;
   opacity: 1;
 }
 
@@ -6977,7 +6977,7 @@ input[type=range]:focus::-ms-fill-upper {
 .side-nav a {
   color: rgba(0, 0, 0, 0.87);
   display: block;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   height: 48px;
   line-height: 48px;
@@ -7746,7 +7746,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .slider .indicators .indicator-item.active {
-  background-color: #4CAF50;
+  background-color: #0099ff;
 }
 
 .carousel {

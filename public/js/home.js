@@ -51,17 +51,6 @@ $(document).ready(function() {
 
 })();
 
-////////////////////////////////////// // GOOGLE MAPS /////////////////////////////////////////////////////////
-
-var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 41.0082, lng: 28.9784}, 
-          zoom: 8
-        });
-      }
-
-
 // init ScrollMagic
 
 var controller = new ScrollMagic.Controller();
@@ -91,7 +80,6 @@ var ourScene2 = new ScrollMagic.Scene({
 
 	triggerElement: '#aboutus',
 	triggerHook: 0
-
 })
 .setPin('#aboutus', {pushFollowers: false})
 .setClassToggle("#aboutus", "active")
@@ -101,6 +89,7 @@ var ourScene2 = new ScrollMagic.Scene({
 	colorStart: 'red'
 })
 .addTo(controller);
+
 
 // ////========SCENE3=====////////////
 
@@ -136,7 +125,7 @@ var ourScene4 = new ScrollMagic.Scene({
 })
 .addTo(controller);
 
-// //========SCENE5=====////////////
+// ////========SCENE5=====////////////
 
 var ourScene5 = new ScrollMagic.Scene({
 
@@ -156,14 +145,14 @@ var ourScene5 = new ScrollMagic.Scene({
 // ////////////////========TEXT ANIMATIONS=====/////////////////
 $('.text').each(function(){
 
-	var tween = TweenMax.from($(this), 1, {autoAlpha:0, scale:0.5, y: -318, ease:Power0.easeNone});
+	var tween = TweenMax.from($(this), 1, {autoAlpha:0, x: -300, ease:Power0.easeNone});
 
 	console.log(this);
 
 	var ourScene6 = new ScrollMagic.Scene({
 
 		triggerElement: this,
-		triggerHook: 0,
+		triggerHook: 0.3,
 		reverse: false
 	})
 	.addIndicators({
@@ -175,6 +164,11 @@ $('.text').each(function(){
 	.addTo(controller);
 });
 
+$('#nav-link').click(function(e){
+	e.preventDefault();
+
+	$('.button-collapse').click();
+});
 
 });
 
